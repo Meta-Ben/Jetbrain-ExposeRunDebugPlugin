@@ -11,7 +11,6 @@ class ServerSettingsConfigurable : Configurable {
     override fun getDisplayName(): String = "Expose Run/Debug Plugin Settings"
 
     override fun createComponent(): JComponent? {
-        serverSettingsView.create()
         return serverSettingsView.create()
     }
 
