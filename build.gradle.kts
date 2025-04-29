@@ -3,8 +3,8 @@ plugins {
     kotlin("jvm") version "1.9.22"
 }
 
-group = "com.expose_run_debug_plugin"
-version = "1.0-SNAPSHOT"
+group = "io.metaut.benjamin"
+version = "1.0.0"
 
 repositories {
     mavenCentral()
@@ -14,16 +14,23 @@ dependencies {
     implementation("org.nanohttpd:nanohttpd:2.3.1")
 }
 
-tasks.test {
-    useJUnitPlatform()
-}
-
 kotlin {
     jvmToolchain(17)
 }
 
 intellij {
-    version = "2023.1" // Remplace cela par la version d'IntelliJ que tu utilises
-    type = "IC" // "IC" pour Community Edition, "IU" pour Ultimate Edition
+    //Debug Ide settings
+    version.set("2024.3.1") // Target Intellij version for the plugin
+    type.set("IC") // "IC" for Community Edition and "IU" for Ultimate Edition
 }
 
+tasks {
+    patchPluginXml {
+        sinceBuild.set("243") // Minimum Supported version
+        untilBuild.set("249.*") // Maximum Supported Version
+    }
+
+    test {
+        useJUnitPlatform()
+    }
+}
