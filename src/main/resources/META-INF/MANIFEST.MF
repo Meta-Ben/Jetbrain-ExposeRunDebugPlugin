@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Plugin-Id: com.expose_run_debug_plugin
+Plugin-Version: 1.0.0
