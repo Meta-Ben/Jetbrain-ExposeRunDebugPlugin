@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "io.metaut.benjamin"
-version = "1.0.0"
+version = "1.0.1"
 
 repositories {
     mavenCentral()
@@ -26,8 +26,8 @@ intellij {
 
 tasks {
     patchPluginXml {
-        sinceBuild.set("243") // Minimum Supported version
-        untilBuild.set("249.*") // Maximum Supported Version
+        sinceBuild.set("230") // Minimum Supported version
+        untilBuild.set("255.*")
     }
 
     test {

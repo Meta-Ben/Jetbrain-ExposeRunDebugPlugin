@@ -17,7 +17,6 @@ object ServerManager {
         try {
             server?.start()
             isRunning = true
-
             logger.info("Run/Debug Server started on port : " + ServerConfig.getPort())
         } catch (e: Exception) {
             logger.warning("Error during server launch: "+ e.message)
