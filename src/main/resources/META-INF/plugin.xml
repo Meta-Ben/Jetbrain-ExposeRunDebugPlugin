@@ -1,6 +1,6 @@
 <idea-plugin>
     <id>com.expose_run_debug_plugin</id>
-    <name>Expose Run/Debug Plugin</name>
+    <name>Expose Run/Debug</name>
     <version>1.0</version>
     <vendor email="metautbenjamin@hotmail.fr">Metaut Benjamin</vendor>
     <description>Plugin that allow to expose Run and Debug config to be executed from external apps</description>
