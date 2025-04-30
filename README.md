@@ -1,3 +1,7 @@
+<p align="center">
+<img width="320" height="320" src="https://i.ibb.co/gZxFw0PF/plugin-Icon-1.png" >
+</p>
+
 <h1 align="center">▶️ Expose Run/Debug 🔌</h1>
 <p align="center">
     <a href="https://fr.wikipedia.org/wiki/Kotlin_(langage)"> 
